@@ -26,8 +26,8 @@ def show_path_animation(stdscr, stack, this_map, rows, cols, start_pos, end_pos)
 
 	stdscr.clear()
 
-    # A 2d array of the stuff that's actually printed on screen.
-    # replace obstacles with "&", everything else with ".", etc..
+        # A 2d array of the stuff that's actually printed on screen.
+        # replace obstacles with "&", everything else with ".", etc..
 	printable_map = [["."]*cols for r in range(rows)]
 	for r in range(rows):
 		for c in range(cols):
