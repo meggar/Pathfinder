@@ -1,4 +1,4 @@
-from curses import wrapper, init_pair, color_pair, COLOR_YELLOW, COLOR_BLACK, COLOR_WHITE, COLOR_BLUE
+from curses import wrapper, init_pair, color_pair
 from time import sleep
 
 my_map = [
