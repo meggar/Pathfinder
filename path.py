@@ -143,7 +143,7 @@ def shortest_path(this_map, start_pos, end_pos):
 
 		for (r,c) in ((x,-~y), (x,~-y), (~-x,y), (-~x,y)):
 			if isValidRowAndCol( r,c ):
-				if this_map[r][c] == 0:
+				if this_map[r][c] >= 0:
 				    q.append( (r,c, i+1) )
 
 	if not path_completed:
