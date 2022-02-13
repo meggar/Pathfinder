@@ -130,6 +130,11 @@ def shortest_path(this_map, start_pos, end_pos):
 
 	while q:
 		x,y,i = q.pop(0)
+
+		# this node may have been visited already by a shorter path
+		if 0 < this_map[x][y] < i:
+			continue
+
 		this_map[x][y] = i
 		if (x,y) == end_pos:
 			print_results(this_map, rows, cols, start_pos, end_pos)
